@@ -9,7 +9,7 @@ int main(void)
 
     while(1)
     {
-        printf("암호를 생성하시오:");
+        printf("숫자,대문자,소문자를 섞은 암호를 생성하시오:");
         gets(password);
 
         is_upper=is_lower=is_digit=0;
@@ -25,10 +25,10 @@ int main(void)
           }
         if(is_lower*is_upper*is_digit != 0)
         {
-            printf("적정한 암호입니다.\n");
+            printf("적절한 암호입니다.\n");
             break;
         }
-        else("숫자, 소문자, 대문자를 섞어서 암호를 다시 만드세요.\n");
+        else("숫자, 소문자, 대문자를 모두 섞어서 암호를 다시 만드세요.\n");
     }
     
     return 0;
